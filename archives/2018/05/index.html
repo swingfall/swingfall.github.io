@@ -6,10 +6,10 @@
     
     
     
-    <title>归档: 2018/5 | swingfall | 欢迎你来到我的主页</title>
+    <title>归档: 2018/5 | Cyan | 爱吃冰淇淋的咽炎患者</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
-    <meta name="theme-color" content="#77AAFF">
+    <meta name="theme-color" content="#b4a7d6">
     
     
     <meta name="keywords" content="blog">
@@ -39,17 +39,17 @@
 
 
     
-    <meta name="description" content="这是一个你点进来就会有收获的地方">
+    <meta name="description" content="希望在这里能有所得">
 <meta name="keywords" content="blog">
 <meta property="og:type" content="website">
-<meta property="og:title" content="swingfall">
+<meta property="og:title" content="Cyan">
 <meta property="og:url" content="http://swingfall.top/archives/2018/05/index.html">
-<meta property="og:site_name" content="swingfall">
-<meta property="og:description" content="这是一个你点进来就会有收获的地方">
+<meta property="og:site_name" content="Cyan">
+<meta property="og:description" content="希望在这里能有所得">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="swingfall">
-<meta name="twitter:description" content="这是一个你点进来就会有收获的地方">
+<meta name="twitter:title" content="Cyan">
+<meta name="twitter:description" content="希望在这里能有所得">
     
     <link rel="shortcut icon" href="/img/favicon.ico">
     <link id="style" rel="stylesheet" href="/css/style.css?v=3.0">
@@ -75,7 +75,7 @@
         <hgroup class="introduce">
           <h5 class="nickname" id="name">swingfall</h5>
           
-            <div id="yiyanmotto" class="motto">&nbsp;</div>
+            <div id="mymotto" class="motto"></div>
           
         </hgroup>
       </div>
@@ -113,7 +113,7 @@
             
               <li class="waves-block waves-effect">
                   <a href="/about"  >
-                    <i class="icon icon-lg icon-smile-o"></i>
+                    <i class="icon icon-lg icon-info"></i>
                     <span>关 于</span><i class="icon icon-lg icon-caret-left"></i>
                   </a>
               </li>
@@ -125,11 +125,7 @@
               </a>
           
               <a class="nav2item" data-title="Github" href="https://github.com/swingfall" target="_blank"title="Github" >
-                <i class="icon icon-lg icon-github github"></i>
-              </a>
-          
-              <a class="nav2item" data-title="微博" href="https://weibo.com/u/2879707390" target="_blank"title="微博" >
-                <i class="icon icon-lg icon-weibo weibo"></i>
+                <i class="icon icon-lg icon-github-alt github-alt"></i>
               </a>
           
 
@@ -367,7 +363,12 @@ postshow();
 
 /* 座右铭 */
 
-   getHitokoto();
+    elasticText({
+        id: "mymotto",
+        duration: 100,
+        effact: "easeOut",
+        content: ""
+    });
 
 
 
