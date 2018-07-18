@@ -6,7 +6,7 @@
     
     
     
-    <title>归档: 2018 | swingfall | 欢迎你来到我的主页</title>
+    <title>categories | swingfall | 欢迎你来到我的主页</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
     <meta name="theme-color" content="#77AAFF">
@@ -42,13 +42,14 @@
     <meta name="description" content="这是一个你点进来就会有收获的地方">
 <meta name="keywords" content="blog">
 <meta property="og:type" content="website">
-<meta property="og:title" content="swingfall">
-<meta property="og:url" content="http://swingfall.top/archives/2018/index.html">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="http://swingfall.top/categories/index.html">
 <meta property="og:site_name" content="swingfall">
 <meta property="og:description" content="这是一个你点进来就会有收获的地方">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-05T14:28:13.590Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="swingfall">
+<meta name="twitter:title" content="categories">
 <meta name="twitter:description" content="这是一个你点进来就会有收获的地方">
     
     <link rel="shortcut icon" href="/img/favicon.ico">
@@ -90,14 +91,14 @@
                   </a>
               </li>
             
-              <li class="waves-block waves-effect active">
+              <li class="waves-block waves-effect">
                   <a href="/archives"  >
                     <i class="icon icon-lg icon-archives"></i>
                     <span>归 档</span><i class="icon icon-lg icon-caret-left"></i>
                   </a>
               </li>
             
-              <li class="waves-block waves-effect">
+              <li class="waves-block waves-effect active">
                   <a href="/categories"  >
                     <i class="icon icon-lg icon-th-list"></i>
                     <span>分 类</span><i class="icon icon-lg icon-caret-left"></i>
@@ -149,7 +150,7 @@
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">归档</div>
+        <div class="flex-col header-title ellipsis">分类</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -166,7 +167,7 @@
         </a>
     </div>
 </header>
-<header class="content-header archives-header">
+<header class="content-header categories-header">
     
     
     <div class="container fade-scale">
@@ -176,7 +177,19 @@
             </h1>
             <h5 class="subtitle">
                 
-                    <h1 class="archivestitle">路漫漫其修远兮</h1>
+                    <h1 id="pagetitle" class="archivestitle"></h1>
+                    <script>
+                        if(location.href.indexOf('about')!=-1){
+                            pagetitle.textContent = '一个坏掉的番茄';
+                        }else if(location.href.indexOf('tags')!=-1||location.href.indexOf('categories')!=-1){
+                            var a=location.href.substring(location.href.length-5,location.href.length-1);
+                            if(a==='tags'){
+                                pagetitle.textContent = '不积小流无以成江海';
+                            }else if(a==='ries'){
+                                pagetitle.textContent = '不积跬步无以至千里';
+                            }
+                        }
+                    </script>
                 
             </h5>
         </div>
@@ -186,72 +199,15 @@
 
 <div class="container body-wrap fade">
     
-
-    
+    	<h5 class="tag-tip">
+            <i class="icon icon-lg icon-th-list"></i>
+            目前共&nbsp;0&nbsp;大分类
+        </h5>
+        <div class="card-pool">
             
-            <h3 class="archive-separator">
-                <i class="icon icon-lg icon-folder-o"></i>&nbsp;&nbsp;
-                2018
-            </h3>
-            <div class="waterfall">
+        </div>
     
 
-        <article class="archive-article" onclick="location.href='/2018/07/18/linux常用命令/'">
-    <div class="archive-article-date">
-      
-      <time class="my-post-time">
-        <i class="icon icon-lg icon-file-text-o"></i>
-        &nbsp;
-          07-18
-      </time>
-    </div>
-    <div class="archive-article-inner">
-      
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/2018/07/18/linux常用命令/">linux常用命令</a>
-    </h3>
-  
-
-
-
-      
-    </div>
-  </article>
-
-    
-
-        <article class="archive-article" onclick="location.href='/2018/05/05/hello-world/'">
-    <div class="archive-article-date">
-      
-      <time class="my-post-time">
-        <i class="icon icon-lg icon-file-text-o"></i>
-        &nbsp;
-          05-05
-      </time>
-    </div>
-    <div class="archive-article-inner">
-      
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a href="/2018/05/05/hello-world/">Hello World</a>
-    </h3>
-  
-
-
-
-      
-    </div>
-  </article>
-
-    
-    </div>
-
-    
 </div>
 
         <footer class="footer">
